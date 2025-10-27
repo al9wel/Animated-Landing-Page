@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Oswald:wght@700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Oswald:wght@700&display=swap'); */
+@import "tailwindcss";
+
+@theme {
+  --font-title: "Oswald", sans-serif;
+  --font-regular: "Nunito", sans-serif;
+  --font-Saira: "Saira", sans-serif;
+  --color-background: #929397;
+  --color-background2: #e1d6d1;
+  --color-container: #0a0a0a;
+  --color-title1: #eee5e0;
+  --color-title2: #8f8b89;
+  --color-info1: #eb3e64;
+  --color-info2: #6fcec6;
+  --color-info3: #f3d20b;
+  --color-info4: #f57f04;
+  --color-info5: #a5dc74;
+  /* bg: #929397;
+  container: #0a0a0a;
+  title: #eee5e0;
+  red: #eb3e64;
+  green: #6fcec6;
+  yello: #f3d20b;
+  orange: #f57f04;
+  lemon: #a5dc74; */
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+
+}
+
+.animate {
+  animation: load;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes load {
+  to {
+    transform: translateY(-20px);
+  }
+}
