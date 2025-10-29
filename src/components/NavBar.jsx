@@ -1,16 +1,12 @@
 import { Home, User, Briefcase, FileText } from 'lucide-react';
-
-
-
 const navItems = [
   { name: 'Home', url: '#', icon: <Home /> },
   { name: 'About', url: '#about', icon: <User /> },
-  { name: 'Projects', url: '#projects', icon: <Briefcase /> },
 ]
-const NavBar = ({ border, handleNavBorder }) => {
+const NavBar = ({ border }) => {
   return (
     <>
-      <nav className='flex justify-between items-center px-5 md:px-20 py-6 lg:py-2.5'>
+      <nav className='flex relative z-50 justify-between items-center px-5 md:px-20 py-6 lg:py-2.5'>
         <div className='flex justify-center items-center gap-2 '>
           <div className='w-13 h-7 bg-teal-700/70 rounded-tr-2xl rounded-br-2xl overflow-clip flex justify-between items-center flex-col'>
             <div className='w-full h-1 bg-white/50'></div>
@@ -23,7 +19,6 @@ const NavBar = ({ border, handleNavBorder }) => {
           {navItems.map((item) => {
             return (
               <a
-                onClick={() => handleNavBorder(item.name)}
                 href={item.url}
                 key={item.name}
                 className={`

@@ -7,14 +7,14 @@ import RotatingText from "../components/RotatingText"
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'motion/react'
 
-const Hero = ({ border, handleNavBorder }) => {
+const Hero = () => {
     return (
         <>
-            <motion.section id='home' className='sticky top-0 p-2 h-screen  '>
+            <motion.section id='home' className=' p-2 h-screen  '>
                 <motion.div className='bg-container/98 backdrop-blur-2xl w-full min-h-[97vh] md:min-h-180 rounded-md font-regular overflow-hidden'>
                     {/* nav */}
                     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "backOut" }}>
-                        <NavBar border={border} handleNavBorder={handleNavBorder} />
+                        <NavBar border={"Home"} />
                     </motion.div>
                     {/* title */}
                     <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1, ease: "backOut" }} className="flex justify-center items-center">
